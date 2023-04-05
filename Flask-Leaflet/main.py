@@ -1,15 +1,11 @@
 from flask import Flask, render_template, request
+from getBikePoints import getBikePoints
+
 app=Flask(__name__)
 
 @app.route('/')
 def root():
-    markers=[
-        {
-        'lat':0,
-        'lon':0,
-        'popup':'This is the middle of the map.'
-        }
-    ]
+    markers=getBikePoints()
     return render_template('index.html',markers=markers )
 
 if __name__ == '__main__':

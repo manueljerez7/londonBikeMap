@@ -6,3 +6,46 @@ html, body, #map {
     height: 100%;
     width: 100%;
 }
+
+.topbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 15%;
+    background-color: #ffffff;
+    z-index: 9999;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+
+}
+
+.topbar:hover {
+    opacity: 1;
+  }
+
+.topbar img {
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.8
+}
+
+.legend {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    background-color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .value {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
